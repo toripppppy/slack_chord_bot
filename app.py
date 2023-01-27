@@ -4,6 +4,7 @@ from slack_bolt import App
 import degreer
 
 # ボットトークンと署名シークレットでアプリを初期化
+# 環境変数はrender側で管理
 app = App(
     token = os.getenv('BOT_TOKEN'),
     signing_secret = os.getenv('BOT_SECRET')
